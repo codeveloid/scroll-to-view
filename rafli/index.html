@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Halaman Profil Bandung</title>
 
-    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -20,9 +20,9 @@
 
       <nav>
         <ul>
-          <li><a href="#sejarah">Sejarah</a></li>
-          <li><a href="#geografis">Geografis</a></li>
-          <li><a href="#wisata">Wisata</a></li>
+          <li><a onclick="scrollElement1()">Sejarah</a></li>
+          <li><a onclick="scrollElement2()">Geografis</a></li>
+          <li><a onclick="scrollElement3()">Wisata</a></li>
         </ul>
       </nav>
     </header>
@@ -175,5 +175,19 @@
     <footer>
       <p>Belajar Dasar Pemrograman Web &#169; 2019, Dicoding Academy</p>
     </footer>
+    <script>
+      function scrollElement1() {
+        var elem1 = document.getElementById("sejarah");
+        elem1.scrollIntoView({ behavior: "smooth" });
+      }
+      function scrollElement2() {
+        var elem2 = document.getElementById("geografis");
+        elem2.scrollIntoView({ behavior: "smooth" });
+      }
+      function scrollElement3() {
+        var elem3 = document.getElementById("wisata");
+        elem3.scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
   </body>
 </html>
